@@ -1,0 +1,5 @@
+bower_components
+.sublime-gulp.cachublime-gulp.cache
+.DS_Store
+build
+node_modules

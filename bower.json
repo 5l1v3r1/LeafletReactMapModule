@@ -1,0 +1,24 @@
+{
+  "name": "biodesign-frontend",
+  "version": "0.0.1",
+  "authors": [
+    "Budi Prakosa a.k.a Iyok <iyok@deadmediafm.org>"
+  ],
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "marionette": "2.3.0"
+  },
+  "dependencies": {
+    "marionette": "2.3.0",
+    "leaflet": "~0.7.3"
+  }
+}

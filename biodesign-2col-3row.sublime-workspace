@@ -1,0 +1,1324 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"noti",
+				"notify"
+			],
+			[
+				"sc",
+				"scr	script()"
+			],
+			[
+				"scr",
+				"src	src=\"\""
+			],
+			[
+				"in",
+				"input-xs	BootstrapClass"
+			],
+			[
+				"vend",
+				"vendor_js"
+			],
+			[
+				"brows",
+				"browserify"
+			],
+			[
+				"dds",
+				"dds_constant"
+			],
+			[
+				"sine",
+				"sinewave_data"
+			],
+			[
+				"SOng",
+				"SongDummy"
+			],
+			[
+				"now",
+				"nowplaying"
+			],
+			[
+				"curr",
+				"currentSong"
+			],
+			[
+				"stop",
+				"stoploading"
+			],
+			[
+				"resu",
+				"resultView"
+			],
+			[
+				"to",
+				"toggleClass	jQuery"
+			],
+			[
+				"hi",
+				"hide	jQuery"
+			],
+			[
+				"toggle",
+				"togglehideshow"
+			],
+			[
+				"pla",
+				"playlist"
+			],
+			[
+				"play",
+				"playModel"
+			],
+			[
+				"Pla",
+				"Playlist"
+			],
+			[
+				"inde",
+				"indexOf	jsArray"
+			],
+			[
+				"next",
+				"nextplaylist"
+			],
+			[
+				"node",
+				"nodeCanvas"
+			],
+			[
+				"auth",
+				"authenticated"
+			],
+			[
+				"aut",
+				"authenticated"
+			],
+			[
+				"pos",
+				"post_file"
+			],
+			[
+				"default",
+				"defaultvalue"
+			],
+			[
+				"seed",
+				"seedtable"
+			],
+			[
+				"nodeC",
+				"nodeContainer"
+			],
+			[
+				"edi",
+				"editValue"
+			],
+			[
+				"Seed",
+				"SeedItem"
+			],
+			[
+				"refresh",
+				"refreshView"
+			],
+			[
+				"chil",
+				"childViewOptions"
+			],
+			[
+				"def",
+				"defaults"
+			],
+			[
+				"prev",
+				"preventClose"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"column",
+				"columnLength"
+			],
+			[
+				"colu",
+				"columnType"
+			],
+			[
+				"relatio",
+				"relationModel"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"param",
+				"parameters"
+			],
+			[
+				"child",
+				"childview"
+			],
+			[
+				"preve",
+				"preventDefault	jQueryEvent"
+			],
+			[
+				"valida",
+				"validationError"
+			],
+			[
+				"rela",
+				"relation_collection"
+			],
+			[
+				"view",
+				"viewNodeCanvas"
+			],
+			[
+				"preven",
+				"preventClose"
+			],
+			[
+				"test",
+				"testmod"
+			],
+			[
+				"item",
+				"itemview"
+			],
+			[
+				"Node",
+				"NodeModule"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"eve",
+				"events"
+			],
+			[
+				"exec",
+				"execute(\"draw:relation:model"
+			],
+			[
+				"setT",
+				"setTimeout	jsWindow"
+			],
+			[
+				"fad",
+				"fadeIn	jQuery"
+			],
+			[
+				"on",
+				"onDomRefresh"
+			],
+			[
+				"targ",
+				"targetid"
+			],
+			[
+				"connec",
+				"connection"
+			],
+			[
+				"model",
+				"modelcid"
+			],
+			[
+				"fade",
+				"fadeOut	jQuery"
+			],
+			[
+				"NodeC",
+				"NodeCollection"
+			],
+			[
+				"ex",
+				"extend	jQuery"
+			],
+			[
+				"bmel",
+				"bcmodel	Backbone.js collection model"
+			],
+			[
+				"chi",
+				"childViewContainer"
+			],
+			[
+				"bm",
+				"bmiv	Backbone.Marionette ItemView"
+			],
+			[
+				"te",
+				"testview"
+			],
+			[
+				"bmo",
+				"bmconstructor	Backbone.js model constructor"
+			],
+			[
+				"Peop",
+				"PeopleView"
+			],
+			[
+				"Pers",
+				"PersonView"
+			],
+			[
+				"bmc",
+				"bmcv	Backbone.Marionette CollectionView"
+			],
+			[
+				"bme",
+				"bmextend	Backbone.js model extend"
+			],
+			[
+				"fun",
+				"function	jsProp"
+			],
+			[
+				"cos",
+				"console	jsProp"
+			],
+			[
+				"Con",
+				"ContactManager"
+			],
+			[
+				"contac",
+				"contacts"
+			],
+			[
+				"last",
+				"lastName"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"Cont",
+				"Contact"
+			],
+			[
+				"alert",
+				"alertPhoneNumber"
+			],
+			[
+				"Contact",
+				"ContactManager"
+			],
+			[
+				"Mario",
+				"MarionetteJS"
+			],
+			[
+				"dest",
+				"destroy"
+			],
+			[
+				"list",
+				"listenTo"
+			],
+			[
+				"lis",
+				"listenTo"
+			],
+			[
+				"nodeRe",
+				"nodeRendered"
+			],
+			[
+				"dump",
+				"dumpJSON"
+			],
+			[
+				"rel",
+				"relationtype"
+			],
+			[
+				"coll",
+				"collection"
+			],
+			[
+				"detach",
+				"detachListen"
+			],
+			[
+				"Crea",
+				"CreateNodeView"
+			],
+			[
+				"detac",
+				"detachAllConnections"
+			],
+			[
+				"Re",
+				"RelationModel"
+			],
+			[
+				"des",
+				"destroy"
+			],
+			[
+				"tem",
+				"template"
+			],
+			[
+				"Relat",
+				"RelationView"
+			],
+			[
+				"Relation",
+				"RelationCreateView"
+			],
+			[
+				"Rela",
+				"RelationModel"
+			],
+			[
+				"Rel",
+				"RelationCollectionView"
+			],
+			[
+				"Column",
+				"ColumnModel"
+			],
+			[
+				"ColumnC",
+				"ColumnCollection"
+			],
+			[
+				"up",
+				"updateIndex"
+			],
+			[
+				"colv",
+				"colview"
+			],
+			[
+				"add",
+				"addOne"
+			],
+			[
+				"Bac",
+				"Backbone"
+			],
+			[
+				"b",
+				"bd+	border: ${1:1px} ${2:solid} ${3:#000};"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"background",
+				"background-color:   (property)"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ta",
+				"table-striped	BootstrapClass"
+			],
+			[
+				"nav",
+				"nav-tabs	BootstrapClass"
+			],
+			[
+				"n",
+				"navbar	BootstrapClass"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"en",
+				"end  (function)"
+			],
+			[
+				"_",
+				"_max	Underscore.js max"
+			],
+			[
+				"bc",
+				"bcshift	Backbone.js collection shift"
+			],
+			[
+				"UserLi",
+				"UserListView"
+			],
+			[
+				"iyok",
+				"iyokView"
+			],
+			[
+				"Member",
+				"MemberList"
+			],
+			[
+				"User",
+				"UserView"
+			],
+			[
+				"c",
+				"Marionette.Commands"
+			],
+			[
+				"bcol",
+				"bcmodel	Backbone.js collection model"
+			],
+			[
+				"bel",
+				"bvel	Backbone.js view el"
+			],
+			[
+				"bv",
+				"bvconstructor	Backbone.js view constructor"
+			],
+			[
+				"ma",
+				"map(n, t, index, value}, r)"
+			],
+			[
+				"Us",
+				"UserView (?)"
+			],
+			[
+				"res",
+				"response  (variable)"
+			],
+			[
+				"var",
+				"var_dump  (function)"
+			],
+			[
+				"Respo",
+				"Response-json	Response-json"
+			],
+			[
+				"stat",
+				"statusCode"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"jav",
+				"Javascript Beautify"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"htm",
+				"HTMLBeautify"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"gulp",
+				"Gulp"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"add pus",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"add",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"add ",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"commit ",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"commit",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"add pu",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"add push",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"add comm",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"add commit",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"comm",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"commi",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"ht",
+				"HTMLBeautify"
+			],
+			[
+				"h",
+				"HTMLBeautify"
+			],
+			[
+				"ja",
+				"Javascript Beautify"
+			],
+			[
+				"htrm",
+				"HTMLPrettify"
+			],
+			[
+				"bea",
+				"Javascript Beautify"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"beauti",
+				"HTMLBeautify"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
+			[
+				"diff",
+				"Git (SideBarGit): Diff: all changes since the last commit"
+			],
+			[
+				"amend",
+				"Git (SideBarGit): Commit Amend"
+			],
+			[
+				"amen",
+				"Git (SideBarGit): Commit Amend"
+			],
+			[
+				"filediff",
+				"FileDiffs: Menu"
+			],
+			[
+				"beaU",
+				"HTMLBeautify"
+			],
+			[
+				"vbeau",
+				"Javascript Beautify"
+			],
+			[
+				"pic",
+				"Color Picker"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"git",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"kac",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
+			[
+				"PACKA IN",
+				"Package Control: Install Package"
+			],
+			[
+				"PACKA",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packai",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packake ",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
+			],
+			[
+				"artisan ",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"artisan",
+				"Laravel Artisan: Serve"
+			],
+			[
+				"install packa",
+				"Package Control: Install Package"
+			],
+			[
+				"resto",
+				"Xdebug: Restore Layout"
+			],
+			[
+				"stop",
+				"Xdebug: Stop Debugging"
+			],
+			[
+				"x",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"xde",
+				"Xdebug: Restore Layout"
+			],
+			[
+				"xdebug stop",
+				"Xdebug: Stop Debugging"
+			],
+			[
+				"xdeb",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"xdebug",
+				"Xdebug: Restore Layout"
+			],
+			[
+				"start",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"route",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"git ",
+				"Git (SideBarGit): Init"
+			],
+			[
+				"gl",
+				"Glue - Launch"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"artisan seed",
+				"Laravel Artisan: DB:Seed"
+			],
+			[
+				"artisa",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"routes",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"ar",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"artis",
+				"Laravel Artisan: Routes"
+			],
+			[
+				"work",
+				"Worksheet: Evaluate worksheet"
+			],
+			[
+				"works",
+				"Worksheet: Evaluate worksheet"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/templates"
+	],
+	"file_history":
+	[
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/package.json",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade/index.jade",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade/script.jade",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/index.html",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/bundle.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/gulpfile.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/js/main.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade/test.jade",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/app.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/bundle.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/biodesign.sublime-project",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/builds/dev/test.html",
+		"/Users/xcorex/Documents/Projects/Fluxus/fluxus-vj-master/cube_star4",
+		"/Users/xcorex/Documents/Projects/Fluxus/fluxus-vj-master/cube_star",
+		"/Users/xcorex/Documents/Projects/Fluxus/manticore-core/main_sin_noise",
+		"/Users/xcorex/Documents/Projects/Fluxus/manticore-core/visual2",
+		"/Users/xcorex/Documents/Projects/Fluxus/manticore-core/visual_template",
+		"/Users/xcorex/Documents/Projects/Fluxus/manticore-core/visual_class",
+		"/Users/xcorex/Documents/Projects/Fluxus/manticore-core/main~",
+		"/Users/xcorex/Desktop/uwsgi_django_webfaction.sh",
+		"/Applications/AMPPS/www/biodesign/biodesign2/geodjango/geodjango/wsgi.py",
+		"/Volumes/TOSHIBA/attiny tone/main.ino",
+		"/Applications/Development/Web Development/Pinegrow Web Designer.app/Contents/Resources/app/edit.html",
+		"/Applications/AMPPS/www/biodesign/biodesign2/geodjango/world/models.py",
+		"/Applications/AMPPS/www/biodesign/biodesign2/geodjango/geodjango/settings.py",
+		"/Applications/AMPPS/www/biodesign/biodesign2/geodjango/world/admin.py",
+		"/Applications/AMPPS/www/biodesign/biodesign2/geodjango/geodjango/urls.py",
+		"/Applications/Development/Web Development/Pinegrow Web Designer.app/Contents/Resources/app/main.js",
+		"/Applications/AMPPS/www/biodesign/lightweight-tut/examples/scrum/board/models.py",
+		"/Applications/AMPPS/www/biodesign/lightweight-tut/examples/scrum/board/forms.py",
+		"/Applications/AMPPS/www/biodesign/lightweight-tut/examples/scrum/board/serializers.py",
+		"/Applications/AMPPS/www/biodesign/lightweight-tut/examples/scrum/board/urls.py",
+		"/Applications/AMPPS/www/biodesign/lightweight-tut/examples/scrum/board/views.py",
+		"/Applications/AMPPS/www/biodesign/biodesign-dev/biodesign/sample/models.py",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/examples/video/videoGrabberExample/src/ofApp.cpp",
+		"/Applications/AMPPS/www/biodesign/biodesign-dev/biodesign/biodesign/settings.py",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/examples/video/videoGrabberExample/src/ofApp.h",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/addons/ofxPS3EyeGrabber/example/src/ofApp.cpp",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/addons/ofxPS3EyeGrabber/example/addons.make",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/examples/video/videoGrabberExample/src/main.cpp",
+		"/etc/hosts",
+		"/Users/xcorex/Desktop/workshop filipina.csv",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/addons/ofxUI/example-CustomWidgets/src/ofApp.cpp",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/addons/ofxMtlMapping2D/example-ofxMtlMapping2D/src/testApp.cpp",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/addons/ofxMtlMapping2D/example-ofxMtlMapping2D/src/testApp.h",
+		"/Users/xcorex/Documents/Projects/OpenFrameworks/of_v0.8.4_osx_release/addons/ofxUI/example-CustomWidgets/src/untitled.cpp",
+		"/Users/xcorex/Documents/Projects/Arduino/auduino_attiny85_bergen/main.c",
+		"/Users/xcorex/Documents/Projects/Arduino/8Bitmixtape_Firmware/main.c",
+		"/Users/xcorex/Documents/Projects/Arduino/attiny_capsense/Makefile",
+		"/Users/xcorex/Documents/Projects/Arduino/attiny_capsense/main.c",
+		"/Applications/AMPPS/www/new/app.css",
+		"/Users/xcorex/Documents/Projects/Web Projects/fork.deadmediafm.org-honf/fork.deadmediafm.org/app/routes.php",
+		"/Applications/AMPPS/www/new/index.html",
+		"/Applications/AMPPS/www/new/rest/application/controllers/api/example.php",
+		"/Applications/AMPPS/www/new/asset/js/app.js",
+		"/Users/xcorex/Documents/Projects/Puredata/PdSource/External-Dev/fux_videoglitch/Makefile",
+		"/Users/xcorex/Documents/Projects/Fluxus/manticore-core copy/main3",
+		"/Users/xcorex/Documents/Projects/Fluxus/manticore-core/visual1",
+		"/Users/xcorex/Downloads/attiny_software_dac_single-master/Makefile",
+		"/Users/xcorex/Documents/Projects/Arduino/attiny_capsense copy/Makefile",
+		"/Users/xcorex/Documents/Projects/Arduino/attiny_capsense copy/main.c",
+		"/Users/xcorex/Documents/Projects/Arduino/attiny_capsense copy/soft_dac.c",
+		"/Users/xcorex/Documents/Projects/Web Projects/forktape/asset/js/app.js",
+		"/Volumes/U/stepper_oneStepAtATime/stepper_oneStepAtATime.ino",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/entities/node_entities.js",
+		"/Applications/AMPPS/www/rest-ci/application/libraries/REST_Controller.php",
+		"/Applications/AMPPS/www/rest-ci/application/config/config.php",
+		"/Applications/AMPPS/www/rest-ci/application/config/autoload.php",
+		"/Applications/AMPPS/www/rest-ci/application/config/database.php",
+		"/Applications/AMPPS/www/rest-ci/application/controllers/api/example.php",
+		"/Applications/AMPPS/www/rest-ci/application/controllers/index.html",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_view.js",
+		"/Users/xcorex/Documents/Projects/Web Projects/forktape/fork_files/master.css",
+		"/Users/xcorex/Documents/Projects/Web Projects/forktape/fork.html",
+		"/Users/xcorex/Documents/Projects/Web Projects/forktape/snippet.js",
+		"/Users/xcorex/Documents/Projects/Web Projects/fork.deadmediafm.org-honf/fork.deadmediafm.org/app/libraries/Vk/VkSearch.php",
+		"/Users/xcorex/Documents/Projects/Web Projects/forktape/app.css",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/index.html",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal_container.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal_item.js",
+		"/Users/xcorex/Documents/Projects/Web Projects/backbonetutorial/backbonetutor1/index.html",
+		"/Users/xcorex/Documents/Projects/Web Projects/forktape/bower_components/underscore/underscore.js",
+		"/Users/xcorex/Downloads/596acres-master/README",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/README.md",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/canvas/nodecanvas_view.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/canvas/nodecanvas_controller_base.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/canvas/nodecanvas_controller_canvas.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_controller.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower_components/backbone.bootstrap-modal/src/backbone.bootstrap-modal.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal_gist.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/app.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/main.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/canvas/nodecanvas_controller_menu.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/canvas/nodecanvas_controller_child.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal_relation.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal_generate.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal_base.js",
+		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/3E75185F-F807-429E-944E-1A0E5AD6A9F8/main.js",
+		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/60CA2AAE-395A-48B3-A80B-C45CE6AF4F0F/nodecanvas_controller_canvas.js",
+		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/3667E92D-C5EA-4934-A421-EE7403F0D1CA/node_modal_gist.js",
+		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/5FF3D46F-84B4-435B-B50F-A0A6AA3093DF/index.html",
+		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/58F31BE2-D811-48CE-BFE2-AABDC5316D66/nodecanvas_view.js",
+		"/Users/xcorex/Documents/Projects/Github/laraveldb/badgeek.github.io/laraveldb/asset/app/js/canvas/nodecanvas_controller.js",
+		"/Users/xcorex/Documents/Projects/Github/laraveldb/badgeek.github.io/laraveldb/index.html",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal_seed.js",
+		"/Users/xcorex/Desktop/schema/seed1.skema",
+		"/Users/xcorex/Desktop/schema/seed7.skema",
+		"/Users/xcorex/Desktop/schema/seed6.skema",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node-webkit/node.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/js/app.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/indexm.html",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/css/app.css",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/canvas/nodecanvas_controller.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower.json",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/js/helper.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/entities/nodes.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node_app.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower_components/backbone.modal/examples/3_stacked_modal_with_marionette.html",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower_components/backbone.modal/backbone.marionette.modals.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower_components/backbone.modal/backbone.modal.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower_components/jsplumb/dist/js/jquery.jsPlumb-1.6.4.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower_components/marionette/lib/backbone.marionette.js",
+		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower_components/jsplumb/dist/css/jsplumb.css",
+		"/Applications/AMPPS/www/fouindation-tutor/js/app.js",
+		"/Applications/AMPPS/www/fouindation-tutor/index.html",
+		"/Users/xcorex/Downloads/marionettejs-backbone-marionette-playground/jquery-1.8.3.js",
+		"/Applications/AMPPS/www/marionette/marionette-gentle-introduction/assets/js/apps/header/header_app.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Applications/AMPPS/www/LaravelSchemaDesigner",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"notify",
+			"	",
+			"    ",
+			"page",
+			"console.log(",
+			"console.log(\"ma",
+			"jquery",
+			"set!",
+			"vertex_count",
+			"set",
+			"vertex-ref",
+			"appport",
+			"DJANGOPROJECT",
+			"DJANGOAPP",
+			",",
+			"	",
+			"|400px]]",
+			"m",
+			")",
+			"(",
+			"m",
+			"update",
+			"draw",
+			"buffer",
+			"adc_start",
+			"LED_PORT",
+			"WGM20",
+			"frequency",
+			"AVRCONFIG",
+			"obj",
+			"OBJECTS",
+			"pgm",
+			"sinewave_data",
+			"align",
+			".val",
+			"search",
+			"sortable",
+			"theme",
+			"sortable",
+			"undefined",
+			".dummy",
+			"searchResultPlayer",
+			"SearchResultView",
+			"resultView",
+			".coll",
+			"playlist",
+			"searchResultPlayer",
+			"SearchResultView",
+			"searchresu",
+			"songfinish",
+			"songFinishPlaying",
+			"setAutoNext",
+			"next",
+			"foreach",
+			"each",
+			"first",
+			"each",
+			"savepla",
+			"delete",
+			"savepla",
+			"savePlaylistToServer",
+			"playlistfinish",
+			"playlistFinishPlaying",
+			"songFinishPlaying",
+			"autonext",
+			"next",
+			"reset",
+			"autonext",
+			"stop",
+			"getcurrentindex",
+			"reset",
+			"jingle",
+			"player",
+			"playlist",
+			"playlistpl",
+			"jingle",
+			"loadpla",
+			"stop",
+			"idx",
+			"loadpl",
+			"loadfr",
+			"stop",
+			"loadpl",
+			"load",
+			"loadPlaylistFromServer",
+			"append",
+			".html",
+			"rest",
+			"gif",
+			"rest",
+			"new",
+			"loadPlaylistFromServer",
+			"rest",
+			"header",
+			"test",
+			"database",
+			"atabase",
+			"extra",
+			"wew",
+			"songStartPlaying",
+			"Player",
+			"NodeContainer",
+			"pause",
+			"idx",
+			"toggle",
+			"playmodel",
+			"next",
+			"playModel",
+			"playmodel",
+			"highlight",
+			"download",
+			"currentsong",
+			"play",
+			"remove",
+			"id",
+			"cid",
+			"autonext",
+			"next",
+			"playlist",
+			"tojson",
+			"currentindex",
+			"current",
+			"cid",
+			"change",
+			"Player",
+			"playlistPlayer",
+			"Access-Control-Allow-Origin",
+			"theme"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"   ",
+			",",
+			"",
+			"P",
+			"]",
+			"[",
+			" m(0, 0) * (m(1, 1) * m(2, 2) - m(2, 1) * m(1, 2)) -\n             m(0, 1) * (m(1, 0) * m(2, 2) - m(1, 2) * m(2, 0)) +\n             m(0, 2) * (m(1, 0) * m(2, 1) - m(1, 1) * m(2, 0));",
+			"[",
+			"P",
+			"#container",
+			"#type",
+			"#enumvalue",
+			"#length",
+			"#defaultvalue",
+			"sourceNode",
+			"context.model.get('parent')",
+			"context.model.parent",
+			"sourceNode.parent",
+			"context",
+			"model",
+			"",
+			"model",
+			"",
+			"AVRDUDE_PROGRAMMER"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 484.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 159.0
+	},
+	"output.xdebug":
+	{
+		"height": 466.0
+	},
+	"project": "biodesign.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"phot",
+				"app/controllers/PhotoController.php"
+			],
+			[
+				"image",
+				"app/controllers/ImageController.php"
+			],
+			[
+				"controller",
+				"app/controllers/HomeController.php"
+			],
+			[
+				"createus",
+				"app/database/migrations/2014_09_12_010728_create_users_table.php"
+			],
+			[
+				"user.",
+				"app/models/User.php"
+			],
+			[
+				"user",
+				"app/controllers/UserController.php"
+			],
+			[
+				"",
+				"app/controllers/UserController.php"
+			],
+			[
+				"userc",
+				"app/controllers/UserController.php"
+			],
+			[
+				"app.",
+				"app/config/app.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
