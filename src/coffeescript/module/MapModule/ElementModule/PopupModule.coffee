@@ -2,6 +2,9 @@
  * Marker Module for Leaflet
  * parent: @props.markerContainer
 ###
+Map = require "../MapModule.coffee"
+Layer = require "./LayerModule.coffee"
+Marker = require "./MarkerModule.coffee"
 
 Test = React.createClass
   handleClick: ->
@@ -38,7 +41,11 @@ Popup = React.createClass
     ## warning: cleanup
     @props.markerContainer.on "popupopen", =>
       @_renderid = document.getElementById(@props.id)
-      React.render(<Test count={@state.count} onClick={@handleClick} />, @_renderid)
+      React.render(
+        <Map className="map-full" count={@state.count} onClick={@handleClick}>
+          <Layer/>
+          <Marker position={[-4.577303118123875,108.4462890625]}/>
+        </Map>, @_renderid)
       #$("#"+@props.id).on "click", (e) -> console.log e
     @props.markerContainer.on "popupclose", =>
       React.unmountComponentAtNode(@_renderid)
