@@ -41,6 +41,7 @@ var vendors =
  //   backbone_babysitter:            "./bower_components/backbone.babysitter/lib/backbone.babysitter.js",
  //   backbone_wreqr:                 "./bower_components/backbone.wreqr/lib/backbone.wreqr.js",    
  //   marionette:                     "./bower_components/marionette/lib/backbone.marionette.min.js",
+    marionette:                     "./bower_components/underscore/underscore.js",
     reactjs:                        "./bower_components/react/react-with-addons.js",
     reflux:                         "./bower_components/reflux/dist/reflux.js"
 };
@@ -154,7 +155,7 @@ gulp.task('jade', function() {
 
 gulp.task('watch', function() {
     gulp.watch(path.jade.src, ['jade-index']);
-    gulp.watch(path.coffeescript.src + '/**/*.coffee', ['app']);
+    gulp.watch(path.coffeescript.src + '/**/**/*.coffee', ['app']);
 });
 
 

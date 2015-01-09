@@ -1,11 +1,13 @@
-Map = require "./module/MapModule.coffee"
-Marker = require "./module/MarkerModule.coffee"
-MapController = require "./module/MapController.coffee" 
+###*
+ * MAP Controller
+###
 
-console.log("ok")
+MapController = require "./module/MapController.coffee"
 
 React.render(
   <MapController/>
   document.getElementById("content")
 )
   
+
+console.log "test ok"
