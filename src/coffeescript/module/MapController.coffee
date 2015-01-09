@@ -30,7 +30,7 @@ MapController = React.createClass
         </Marker>
       )
 
-    <Map>
+    <Map id="map">
       <Layer/>
       {children}
     </Map>
