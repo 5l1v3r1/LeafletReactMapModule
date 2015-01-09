@@ -41,11 +41,7 @@ Popup = React.createClass
     ## warning: cleanup
     @props.markerContainer.on "popupopen", =>
       @_renderid = document.getElementById(@props.id)
-      React.render(
-        <Map className="map-full" count={@state.count} onClick={@handleClick}>
-          <Layer/>
-          <Marker position={[-4.577303118123875,108.4462890625]}/>
-        </Map>, @_renderid)
+      React.render(@props.children, @_renderid)
       #$("#"+@props.id).on "click", (e) -> console.log e
     @props.markerContainer.on "popupclose", =>
       React.unmountComponentAtNode(@_renderid)

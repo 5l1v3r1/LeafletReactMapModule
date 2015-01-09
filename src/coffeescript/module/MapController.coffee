@@ -23,9 +23,14 @@ MapController = React.createClass
       return (
         <Marker position={val} key={index}>
           <Popup id={"pop-"+index}>
-            <div id={"pop-"+index}>
-              <button name="test">Click Me</button>
-            </div>
+            <Map className="map-full" onClick={@handleClick}>
+              <Layer/>
+              <Marker position={[-4.577303118123875,108.4462890625]}>
+                <Popup id={"pop2-"+index}>
+                  <b>hahaha</b>
+                </Popup>
+              </Marker>
+            </Map>
           </Popup>
         </Marker>
       )
