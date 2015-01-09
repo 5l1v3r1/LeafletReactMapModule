@@ -22,7 +22,9 @@ MapController = React.createClass
       return (
         <Marker position={val} key={index}>
           <Popup id={"pop-"+index}>
-            <button id={"pop-"+index} className="trigger" onClick={-> console.log "Wedew"} >helelo yellow</button> 
+            <div id={"pop-"+index}>
+              <button name="test">Click Me</button>
+            </div>
           </Popup>
         </Marker>
       )

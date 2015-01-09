@@ -3,6 +3,15 @@
  * parent: @props.markerContainer
 ###
 
+Test = React.createClass
+  handleClick: ->
+    console.log "handle click"
+  componentWillUnmount: ->
+    console.log "TEST UNMOUNT"
+  render: ->
+    <b onClick={@handleClick}>TEST</b>
+
+
 Popup = React.createClass
   handleClick: ->
     console.log "click handler"
@@ -13,12 +22,13 @@ Popup = React.createClass
   componentWillMount: ->
     @setState popUp: @initMarker()
 
-    popContent = React.renderToString(@props.children)
+    popContent = React.renderToString(<div id={@props.id}></div>)
     @props.markerContainer.setPopupContent(popContent)
 
     ## warning: cleanup
     @props.markerContainer.on "popupopen", =>
-      $("#"+@props.id).on "click", (e) => console.log e
+      React.render(<Test key={@props.id} />, document.getElementById(@props.id))
+      #$("#"+@props.id).on "click", (e) -> console.log e
     @props.markerContainer.on "popupclose", =>
       console.log "cleanup"
       $("#"+@props.id).off "click"
