@@ -35,7 +35,7 @@ gulp.copy=function(src,dest){
 
 var vendors = 
 {
- //   jquery:                         "./bower_components/jquery/dist/jquery.js",    
+    jquery:                         "./bower_components/jquery/dist/jquery.js",    
  //   underscore:                     "./bower_components/underscore/underscore.js",
  //   backbone:                       "./bower_components/backbone/backbone.js",
  //   backbone_babysitter:            "./bower_components/backbone.babysitter/lib/backbone.babysitter.js",

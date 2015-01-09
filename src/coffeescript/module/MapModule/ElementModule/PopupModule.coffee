@@ -4,16 +4,27 @@
 ###
 
 Popup = React.createClass
+  handleClick: ->
+    console.log "click handler"
   initMarker: ->
     @props.markerContainer.bindPopup("Loading")
+  getInitialState: ->
+    loaded: 0
   componentWillMount: ->
-    @setState(
-      popUp: @initMarker()
-    )
-    @props.markerContainer.addOneTimeEventListener "click", =>
-      setTimeout (=>
-        @props.markerContainer.setPopupContent @props.children
-        ), 1000
+    @setState popUp: @initMarker()
+
+    popContent = React.renderToString(@props.children)
+    @props.markerContainer.setPopupContent(popContent)
+
+    ## warning: cleanup
+    @props.markerContainer.on "popupopen", =>
+      $("#"+@props.id).on "click", (e) => console.log e
+    @props.markerContainer.on "popupclose", =>
+      console.log "cleanup"
+      $("#"+@props.id).off "click"
+
+
+  componentDidMount: ->
 
   componentWillUnmount: ->
     @props.markerContainer.unbindPopup()

@@ -4,6 +4,8 @@ Popup = require "./MapModule/ElementModule/PopupModule.coffee"
 Layer = require "./MapModule/ElementModule/LayerModule.coffee"
 
 MapController = React.createClass
+  onClick: ->
+    console.log "Wedewww"
   getInitialState: ->
     window.mapcon = @
     {
@@ -19,13 +21,13 @@ MapController = React.createClass
     children = @state.positions.map (val, index)->
       return (
         <Marker position={val} key={index}>
-          <Popup>
-            lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
+          <Popup id={"pop-"+index}>
+            <button id={"pop-"+index} className="trigger" onClick={-> console.log "Wedew"} >helelo yellow</button> 
           </Popup>
         </Marker>
       )
 
-    <Map>
+    <Map onClick={@onClick}>
       <Layer/>
       {children}
     </Map>
