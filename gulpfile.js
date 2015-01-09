@@ -8,7 +8,7 @@ var gutil           = require('gulp-util');
 var uglify          = require('gulp-uglify');  
 var concat          = require('gulp-concat');
 var rename          = require('gulp-rename');  
-var streamify       = require('gulp-streamify')
+var streamify       = require('gulp-streamify');
 var filter          = require('gulp-filter');
 
 var browserify      = require('browserify');
@@ -35,16 +35,18 @@ gulp.copy=function(src,dest){
 
 var vendors = 
 {
-    jquery:                         "./bower_components/jquery/dist/jquery.js",    
-    underscore:                     "./bower_components/underscore/underscore.js",
-    backbone:                       "./bower_components/backbone/backbone.js",
-    backbone_babysitter:            "./bower_components/backbone.babysitter/lib/backbone.babysitter.js",
-    backbone_wreqr:                 "./bower_components/backbone.wreqr/lib/backbone.wreqr.js",    
-    marionette:                     "./bower_components/marionette/lib/backbone.marionette.min.js",
+ //   jquery:                         "./bower_components/jquery/dist/jquery.js",    
+ //   underscore:                     "./bower_components/underscore/underscore.js",
+ //   backbone:                       "./bower_components/backbone/backbone.js",
+ //   backbone_babysitter:            "./bower_components/backbone.babysitter/lib/backbone.babysitter.js",
+ //   backbone_wreqr:                 "./bower_components/backbone.wreqr/lib/backbone.wreqr.js",    
+ //   marionette:                     "./bower_components/marionette/lib/backbone.marionette.min.js",
+    reactjs:                        "./bower_components/react/react-with-addons.js",
+    reflux:                         "./bower_components/reflux/dist/reflux.js"
 };
 
 var vendor_files = [];
-for (vendor in vendors) {
+for (var vendor in vendors) {
     vendor_files.push(vendors[vendor]);
 }
 
@@ -78,7 +80,7 @@ var path = {
         src: "",
         dst: ""
     },
-}
+};
 
 //fire up browsersync server
 gulp.task('browsersync',function(){
@@ -95,17 +97,13 @@ gulp.task('vendor', function(){
     var vendorFiles = gulp.src(vendor_files)
         //.pipe(scriptFilter)
         .pipe(concat('vendor.js'))
-        //.pipe(gulp.dest(path.vendor.dst))                
+        .pipe(gulp.dest(path.vendor.dst))                
         .pipe(uglify())
         .pipe(rename("vendor.min.js"))
         .pipe(gulp.dest(path.vendor.dst));
 });
 
 
-gulp.task('vendor-list', function()
-{
-    console.log(mainBowerFiles());
-});
 
 //vendor leaflet
 gulp.task('vendor-leaflet', function(){
@@ -120,9 +118,9 @@ gulp.task('vendor-leaflet', function(){
 //compile apps
 gulp.task('app', function() {
     return browserify(path.coffeescript.src + '/main.coffee')
-        .transform("coffeeify")
-        .transform("debowerify")
-        .transform("hbsfy")
+        .transform("coffee-reactify")
+        //.transform("debowerify")
+        //.transform("hbsfy")
         .bundle()
         .on("error", swallowError)
         .pipe(source('app.js'))
@@ -156,9 +154,11 @@ gulp.task('jade', function() {
 
 gulp.task('watch', function() {
     gulp.watch(path.jade.src, ['jade-index']);
-    gulp.watch(path.coffeescript.src + '/*.coffee', ['app']);
+    gulp.watch(path.coffeescript.src + '/**/*.coffee', ['app']);
 });
 
 
-// Default task
+
 gulp.task('default', ['watch', 'browsersync']);
+gulp.task('build-vendor', ['vendor', 'vendor-leaflet']);
+

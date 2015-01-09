@@ -1,6 +1,11 @@
-template = require("../templates/Employee.hbs")
-test = require("./module.coffee");
+Map = require "./module/MapModule.coffee"
+Marker = require "./module/MarkerModule.coffee"
+MapController = require "./module/MapController.coffee" 
 
-iyok = new test();
+console.log("ok")
 
-window.iyok = iyok;
+React.render(
+  <MapController/>
+  document.getElementById("content")
+)
+  

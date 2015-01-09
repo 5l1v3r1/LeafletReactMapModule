@@ -1,3 +1,1 @@
-
-var marionette = require("marionette");
-console.log(marionette);
+console.log("wews");

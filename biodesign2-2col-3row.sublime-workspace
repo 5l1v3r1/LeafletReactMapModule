@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"sst	React: setState({...})"
+			],
+			[
+				"conte",
+				"context	jQueryDeprecated"
+			],
+			[
+				"prop",
+				"props	React: @props."
+			],
+			[
+				"getElem",
+				"getElementById	jsDOM"
+			],
+			[
+				"Map",
+				"MapHelper"
+			],
+			[
+				"geo",
+				"geoJSON_sampl"
+			],
+			[
+				"My",
+				"MyApp"
+			],
+			[
+				"exte",
+				"extends"
+			],
+			[
+				"con",
+				"constructor	jsProp"
+			],
+			[
 				"cons",
 				"console"
 			],
@@ -166,10 +202,6 @@
 			[
 				"prev",
 				"preventClose"
-			],
-			[
-				"con",
-				"context"
 			],
 			[
 				"column",
@@ -482,38 +514,6 @@
 			[
 				"_",
 				"_max	Underscore.js max"
-			],
-			[
-				"bc",
-				"bcshift	Backbone.js collection shift"
-			],
-			[
-				"UserLi",
-				"UserListView"
-			],
-			[
-				"iyok",
-				"iyokView"
-			],
-			[
-				"Member",
-				"MemberList"
-			],
-			[
-				"User",
-				"UserView"
-			],
-			[
-				"c",
-				"Marionette.Commands"
-			],
-			[
-				"bcol",
-				"bcmodel	Backbone.js collection model"
-			],
-			[
-				"bel",
-				"bvel	Backbone.js view el"
 			]
 		]
 	},
@@ -523,16 +523,56 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 400.0,
+		"height": 305.0,
 		"selected_items":
 		[
 			[
-				"gulp",
-				"Gulp: Show panel"
+				"react get",
+				"Snippet: React: getDefaultProps: ->"
+			],
+			[
+				"props",
+				"Snippet: React: getDefaultProps: ->"
+			],
+			[
+				"reac",
+				"Snippet: React: shouldComponentUpdate: (np, ns) ->"
 			],
 			[
 				"packa",
-				"Package Control: Remove Package"
+				"Package Control: Install Package"
+			],
+			[
+				"wat",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"set cof",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"tog",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"watch",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"lint",
+				"Coffee: Lint"
+			],
+			[
+				"togg",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"toggle w",
+				"Coffee: Toggle Watch Mode"
+			],
+			[
+				"gulp",
+				"Gulp: Show panel"
 			],
 			[
 				"beau",
@@ -831,11 +871,11 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 439.0
+		"width": 592.0
 	},
 	"console":
 	{
-		"height": 126.0,
+		"height": 360.0,
 		"history":
 		[
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
@@ -854,32 +894,51 @@
 	"expanded_folders":
 	[
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/vendor",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/module",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/js",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/templates"
 	],
 	"file_history":
 	[
-		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade/vendor.jade",
-		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/index.html",
-		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/module.coffee",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/main.coffee",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/module/MapController.coffee",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/module/MarkerModule.coffee",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/module/MapModule.coffee",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/gulpfile.js",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade/index.jade",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/app.js",
-		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/template/Employee.hbs",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade/vendor.jade",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/index.html",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/bower.json",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/vendor/vendor.js",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/package.json",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/js/main.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/main.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/module/BaseModule.coffee",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/module/RouterModule.coffee",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/templates/Employee.hbs",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/app.min.js",
+		"/var/folders/x6/17svhgds0x7889jbwj0rb4y80000gp/T/MapModule.js",
+		"/Users/xcorex/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/xcorex/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/xcorex/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/var/folders/x6/17svhgds0x7889jbwj0rb4y80000gp/T/main.js",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/js/app.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/vendor/vendor.min.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/coffeescript/module.coffee",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/vendor/leaflet/leaflet.js",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/vendor/leaflet/leaflet.css",
+		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/template/Employee.hbs",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade/script.jade",
-		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/vendor/vendor.js",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/build/js/bundle.js",
 		"/Users/xcorex/Library/Application Support/Sublime Text 3/Packages/Web Inspector 3/swi.sublime-settings",
 		"/Users/xcorex/Library/Application Support/Sublime Text 3/Packages/User/swi.sublime-settings",
-		"/Users/xcorex/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Applications/AMPPS/www/biodesign/biodesign-frontend/gulpfile.js",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/src/jade/test.jade",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/app.js",
 		"/Applications/AMPPS/www/biodesign/biodesign-frontend/bundle.js",
@@ -974,22 +1033,7 @@
 		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/60CA2AAE-395A-48B3-A80B-C45CE6AF4F0F/nodecanvas_controller_canvas.js",
 		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/3667E92D-C5EA-4934-A421-EE7403F0D1CA/node_modal_gist.js",
 		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/5FF3D46F-84B4-435B-B50F-A0A6AA3093DF/index.html",
-		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/58F31BE2-D811-48CE-BFE2-AABDC5316D66/nodecanvas_view.js",
-		"/Users/xcorex/Documents/Projects/Github/laraveldb/badgeek.github.io/laraveldb/asset/app/js/canvas/nodecanvas_controller.js",
-		"/Users/xcorex/Documents/Projects/Github/laraveldb/badgeek.github.io/laraveldb/index.html",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal_seed.js",
-		"/Users/xcorex/Desktop/schema/seed1.skema",
-		"/Users/xcorex/Desktop/schema/seed7.skema",
-		"/Users/xcorex/Desktop/schema/seed6.skema",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node-webkit/node.js",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/js/app.js",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/indexm.html",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/css/app.css",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/node/node_modal.js",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/canvas/nodecanvas_controller.js",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/bower.json",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/js/helper.js",
-		"/Applications/AMPPS/www/LaravelSchemaDesigner/asset/app/js/entities/nodes.js"
+		"/Users/xcorex/Library/Caches/Cleanup At Startup/Transmit/58F31BE2-D811-48CE-BFE2-AABDC5316D66/nodecanvas_view.js"
 	],
 	"find":
 	{
@@ -1009,6 +1053,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"componentWillMount",
+			"\n    ",
+			"harmon",
+			"window.test",
+			"test",
+			"window.test",
+			"showtitle",
+			"vendor",
+			"vendor_files",
+			"react",
+			"router",
+			"_map",
+			"events",
+			"\"",
+			"style",
+			"png",
+			"layers",
+			"png",
+			"layers2",
 			"notsc",
 			"rename",
 			"uglif",
@@ -1117,26 +1180,7 @@
 			"header",
 			"test",
 			"database",
-			"atabase",
-			"extra",
-			"wew",
-			"songStartPlaying",
-			"Player",
-			"NodeContainer",
-			"pause",
-			"idx",
-			"toggle",
-			"playmodel",
-			"next",
-			"playModel",
-			"playmodel",
-			"highlight",
-			"download",
-			"currentsong",
-			"play",
-			"remove",
-			"id",
-			"cid"
+			"atabase"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1144,6 +1188,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"'",
 			"  ",
 			"   ",
 			",",
@@ -1186,7 +1231,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -1300,15 +1345,6 @@
 	"selected_group": 0,
 	"settings":
 	{
-		"last_automatic_layout":
-		[
-			[
-				0,
-				0,
-				1,
-				1
-			]
-		],
 		"xdebug":
 		{
 			"hide_conflict": false
@@ -1318,9 +1354,10 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 183.0,
+	"side_bar_width": 182.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
+		"max_columns": 1
 	}
 }
