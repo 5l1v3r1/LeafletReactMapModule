@@ -20,7 +20,7 @@ Marker = React.createClass
   componentWillUnmount: ->
     @props.mapContainer.removeLayer @state.markerContainer
   componentWillUpdate: (nextProps, nextState) ->
-    if not _.isEqual nextProps.position, @props.position
+    if nextProps.position != @props.position
       @state.markerContainer.setLatLng nextProps.position
   render: ->
     children = @getChildrenWithProps
