@@ -5,42 +5,53 @@
 
 Test = React.createClass
   handleClick: ->
-    console.log "handle click"
+    #console.log "handle click"
+    @props.onClick()
+    @setState
+      count: @state.count+1
+  getInitialState: ->
+    count: @props.count
   componentWillUnmount: ->
     console.log "TEST UNMOUNT"
   render: ->
-    <b onClick={@handleClick}>TEST</b>
+    <button onClick={@handleClick}>TEST {@state.count}</button>
 
 
 Popup = React.createClass
   handleClick: ->
     console.log "click handler"
+    @state.count += 1
   initMarker: ->
     @props.markerContainer.bindPopup("Loading")
   getInitialState: ->
     loaded: 0
+    count: 0
   componentWillMount: ->
+    console.log "popup will mount"
     @setState popUp: @initMarker()
 
     popContent = React.renderToString(<div id={@props.id}></div>)
     @props.markerContainer.setPopupContent(popContent)
 
+  componentDidMount: ->
+    console.log "componentDidMount"
     ## warning: cleanup
     @props.markerContainer.on "popupopen", =>
-      React.render(<Test key={@props.id} />, document.getElementById(@props.id))
+      @_renderid = document.getElementById(@props.id)
+      React.render(<Test count={@state.count} onClick={@handleClick} />, @_renderid)
       #$("#"+@props.id).on "click", (e) -> console.log e
     @props.markerContainer.on "popupclose", =>
+      React.unmountComponentAtNode(@_renderid)
       console.log "cleanup"
-      $("#"+@props.id).off "click"
-
-
-  componentDidMount: ->
+      #$("#"+@props.id).off "click"
 
   componentWillUnmount: ->
+    #todo: unmount child
     @props.markerContainer.unbindPopup()
     @props.markerContainer.clearAllEventListeners()
 
   render: ->
+    console.log "render"
     null
 
 
