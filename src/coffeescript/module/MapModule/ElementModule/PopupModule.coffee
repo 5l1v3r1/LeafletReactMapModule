@@ -1,60 +1,49 @@
 ###*
- * Marker Module for Leaflet
+ * Popup Module for Leaflet
  * parent: @props.markerContainer
 ###
 Map = require "../MapModule.coffee"
 Layer = require "./LayerModule.coffee"
 Marker = require "./MarkerModule.coffee"
 
-Test = React.createClass
-  handleClick: ->
-    #console.log "handle click"
-    @props.onClick()
-    @setState
-      count: @state.count+1
-  getInitialState: ->
-    count: @props.count
-  componentWillUnmount: ->
-    console.log "TEST UNMOUNT"
-  render: ->
-    <button onClick={@handleClick}>TEST {@state.count}</button>
-
 
 Popup = React.createClass
+  
+  popUpEvent:
+    popupopen : ->
+      @_renderid = document.getElementById(@props.id)
+      React.render(@props.children, @_renderid)
+    popupclose : ->
+      React.unmountComponentAtNode(@_renderid)
+      console.log "cleanup"
+
   handleClick: ->
     console.log "click handler"
     @state.count += 1
-  initMarker: ->
+  
+  initPopup: ->
     @props.markerContainer.bindPopup("Loading")
+  
   getInitialState: ->
     loaded: 0
     count: 0
+  
   componentWillMount: ->
     console.log "popup will mount"
-    @setState popUp: @initMarker()
-
+    @setState popUp: @initPopup()
     popContent = React.renderToString(<div id={@props.id}></div>)
     @props.markerContainer.setPopupContent(popContent)
-
+  
   componentDidMount: ->
-    console.log "componentDidMount"
-    ## warning: cleanup
-    @props.markerContainer.on "popupopen", =>
-      @_renderid = document.getElementById(@props.id)
-      React.render(@props.children, @_renderid)
-      #$("#"+@props.id).on "click", (e) -> console.log e
-    @props.markerContainer.on "popupclose", =>
-      React.unmountComponentAtNode(@_renderid)
-      console.log "cleanup"
-      #$("#"+@props.id).off "click"
-
+    @props.markerContainer.addEventListener @popUpEvent, @
+  
   componentWillUnmount: ->
-    #todo: unmount child
+    console.log "destroy popup marker event"
     @props.markerContainer.unbindPopup()
-    @props.markerContainer.clearAllEventListeners()
-
+    @props.markerContainer.removeEventListener @popUpEvent, @
+  
   render: ->
-    console.log "render"
+    #console.log "render"
     null
 
 

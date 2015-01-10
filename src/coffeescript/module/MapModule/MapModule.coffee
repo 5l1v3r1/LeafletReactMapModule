@@ -1,26 +1,31 @@
 ###*
  * Leaflet Map Container
+ *   @state.mapContainer = leaflet map parent
 ###
 
 Utils = require "./Mixins/Utils.coffee"
+Test = require "./Mixins/Test.coffee"
 
 Map = React.createClass
-  mixins: [Utils]
+  mixins: [Utils, Test]
   initMap: ->
-    map = L.map(this.getDOMNode()).setView([-0.789275,113.921327], 5)
-    @setState 
-      map: map
+    map = L.map(this.getDOMNode()).setView(@props.position, 5)
+    @setState
+      mapContainer: map
   componentDidMount: ->
+    console.log "from module componentDidMount"
     @initMap()
+  componentWillUnmount: ->
+    console.log "map unmount"
+    #@props.map.remove()
   render: ->
-    console.log @state
     #map is div id by react
-    if not (@state? && @state.map?)
+    if not (@state? && @state.mapContainer?)
       children = null
     else
       children = @getChildrenWithProps
-        markerContainer: @state.markerContainer
-        mapContainer: @state.map
+        mapContainer: @state.mapContainer
+
     <div className={@props.className} id={@props.id}>
       {children}
     </div>

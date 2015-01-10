@@ -35,7 +35,7 @@ gulp.copy=function(src,dest){
 
 var vendors = 
 {
-    jquery:                         "./bower_components/jquery/dist/jquery.js",    
+ //   jquery:                         "./bower_components/jquery/dist/jquery.js",    
  //   underscore:                     "./bower_components/underscore/underscore.js",
  //   backbone:                       "./bower_components/backbone/backbone.js",
  //   backbone_babysitter:            "./bower_components/backbone.babysitter/lib/backbone.babysitter.js",
@@ -116,6 +116,17 @@ gulp.task('vendor-leaflet', function(){
             .pipe(gulp.dest(path.vendor.dst + vendordir));
 });
 
+//vendor prunecluster
+gulp.task('vendor-prunecluster', function(){
+    
+    var basedir = './bower_components/PruneCluster/dist';
+    var vendordir = '/prunecluster'
+
+    return gulp.src([ basedir + '/**/*.css', basedir + '/**/*.min.js', basedir + '/**/*.js.map' ], {base: basedir})
+            .pipe(gulp.dest(path.vendor.dst + vendordir));
+});
+
+
 //compile apps
 gulp.task('app', function() {
     return browserify(path.coffeescript.src + '/main.coffee')
@@ -161,5 +172,5 @@ gulp.task('watch', function() {
 
 
 gulp.task('default', ['watch', 'browsersync']);
-gulp.task('build-vendor', ['vendor', 'vendor-leaflet']);
+gulp.task('build-vendor', ['vendor', 'vendor-prunecluster', 'vendor-leaflet']);
 

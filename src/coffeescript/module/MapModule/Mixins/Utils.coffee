@@ -9,5 +9,8 @@ module.exports =
    * @return {[type]}       [children with props]
   ###
   getChildrenWithProps: (props) ->
-    React.Children.map @props.children, (child) ->
-      React.addons.cloneWithProps(child, props)
+    if  (Array.isArray @props.children)
+      React.Children.map @props.children, (child) ->
+        React.addons.cloneWithProps(child, props)
+    else
+      React.addons.cloneWithProps(@props.children, props)

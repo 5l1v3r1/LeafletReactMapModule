@@ -30,8 +30,13 @@ Layer = React.createClass
     })
     layer.addTo @props.mapContainer
     return layer
+  getInitialState: ->
+    layerContainer: @initMarker()
   componentWillMount: ->
-    @initMarker()
+  componentWillUnmount: ->
+    console.log "destroy layer"
+    @props.mapContainer.removeLayer @state.layerContainer
+      
   render: ->
     null
 
