@@ -126,6 +126,15 @@ gulp.task('vendor-prunecluster', function(){
             .pipe(gulp.dest(path.vendor.dst + vendordir));
 });
 
+gulp.task('vendor-jsonlayer', function(){
+    
+    var basedir = './bower_components/leaflet-layerJSON/dist';
+    var vendordir = '/leaflet-layerJSON';
+
+    return gulp.src([ basedir + '/**/*.js'], {base: basedir})
+            .pipe(gulp.dest(path.vendor.dst + vendordir)).pipe(reload({stream : true}));
+
+});
 
 //compile apps
 gulp.task('app', function() {
@@ -165,6 +174,7 @@ gulp.task('jade', function() {
 
 
 gulp.task('watch', function() {
+    gulp.watch("/Applications/AMPPS/www/biodesign/biodesign-frontend/bower_components/leaflet-layerJSON/dist/leaflet-layerjson.src.js" , ['vendor-jsonlayer']);
     gulp.watch(path.jade.src, ['jade-index']);
     gulp.watch(path.coffeescript.src + '/**/**/*.coffee', ['app']);
 });
@@ -172,5 +182,5 @@ gulp.task('watch', function() {
 
 
 gulp.task('default', ['watch', 'browsersync']);
-gulp.task('build-vendor', ['vendor', 'vendor-prunecluster', 'vendor-leaflet']);
+gulp.task('build-vendor', ['vendor','vendor-jsonlayer', 'vendor-prunecluster', 'vendor-leaflet']);
 

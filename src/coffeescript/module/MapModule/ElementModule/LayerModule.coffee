@@ -19,7 +19,7 @@
 Utils = require "../Mixins/Utils.coffee"
 
 Layer = React.createClass
-  initMarker: ->
+  _createLayer: ->
     layer = L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png',
     {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
@@ -30,7 +30,7 @@ Layer = React.createClass
     layer.addTo @props.mapContainer
     return layer
   getInitialState: ->
-    layerContainer: @initMarker()
+    layerContainer: @_createLayer()
   componentWillMount: ->
   componentWillUnmount: ->
     console.log "destroy layer"

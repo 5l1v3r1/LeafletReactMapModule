@@ -5,15 +5,15 @@ Popup = require "./MapModule/ElementModule/PopupModule.coffee"
 Layer = require "./MapModule/ElementModule/LayerModule.coffee"
 PruneCluster = require "./MapModule/ElementModule/ClusterModule.coffee"
 PrunePopup = require "./MapModule/ElementModule/PrunePopupModule.coffee"
+PruneLayerJSON = require "./MapModule/ElementModule/PruneLayerJsonModule.coffee"
 
 MapController = React.createClass
   getInitialState: ->
     {
       positions:  require "./JRPdata.coffee"
     }
-  _onMapClick : (e,m) ->
-    console.log e
-    console.log m.getBounds()
+  _onMove: ->
+    console.log "on move end"
   render: ->
 
     position = [-7.803252078318418, 110.37484495000001]
@@ -30,9 +30,10 @@ MapController = React.createClass
       </PrunePopup>
 
     # render map
-    <Map onMoveEnd=@_onMapClick position={position} id="map">
+    <Map position={position} id="map">
       <Layer/>
       <PruneCluster>
+      <PruneLayerJSON/>
         {children}
       </PruneCluster>
     </Map>

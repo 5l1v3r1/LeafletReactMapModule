@@ -2,10 +2,10 @@
  * MAP Controller
 ###
 
-MapController = require "./module/MapController.coffee"
+MapJsonController = require "./module/MapJsonController.coffee"
 
 React.render(
-  <MapController/>
+  <MapJsonController/>
   document.getElementById("content")
 )
   

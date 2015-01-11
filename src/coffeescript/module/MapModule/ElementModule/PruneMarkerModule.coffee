@@ -12,12 +12,13 @@ Utils = require "../Mixins/Utils.coffee"
 
 PruneMarker = React.createClass
   mixins : [Utils]
+  getInitialState: ->
+    popUp: false
   initMarker: ->
     #console.log @props.children
     Marker = new PruneCluster.Marker(@props.position[0], @props.position[1])
-    console.log  @props.popUp
-    if @props.popUp
-      console.log "is popup?"
+    #console.log  @props.popUp
+    if @props.popUp? && @props.popUp = true
       Marker.data.popup = @props.children
     @props.clusterContainer.RegisterMarker(Marker)
     return Marker
