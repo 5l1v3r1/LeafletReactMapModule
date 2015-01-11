@@ -3,8 +3,8 @@ Marker = require "./MapModule/ElementModule/MarkerModule.coffee"
 PruneMarker = require "./MapModule/ElementModule/PruneMarkerModule.coffee"
 Popup = require "./MapModule/ElementModule/PopupModule.coffee"
 Layer = require "./MapModule/ElementModule/LayerModule.coffee"
-Cluster = require "./MapModule/ElementModule/ClusterModule.coffee"
-
+PruneCluster = require "./MapModule/ElementModule/ClusterModule.coffee"
+PrunePopup = require "./MapModule/ElementModule/PrunePopupModule.coffee"
 
 MapController = React.createClass
   getInitialState: ->
@@ -13,21 +13,25 @@ MapController = React.createClass
     }
   render: ->
 
-    position = [-0.789275,113.921327]
+    position = [-7.803252078318418, 110.37484495000001]
     console.log "render controller"
     
     #render children
     children = @state.positions.map (val, index)->
       <PruneMarker position={val} key={index}>
-          <b>Test Child</b>
+          <button onClick={(e)-> console.log e} >
+            <i>hahaha</i>
+          </button>
       </PruneMarker>
       
     # render map
     <Map position={position} id="map">
       <Layer/>
-      <Cluster>
-        {children}
-      </Cluster>
+      <PruneCluster>
+        <PrunePopup>
+          {children}
+        </PrunePopup>
+      </PruneCluster>
     </Map>
 
 module.exports = MapController

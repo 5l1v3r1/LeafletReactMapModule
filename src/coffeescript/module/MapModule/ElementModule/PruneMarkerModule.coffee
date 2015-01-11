@@ -13,7 +13,12 @@ Utils = require "../Mixins/Utils.coffee"
 PruneMarker = React.createClass
   mixins : [Utils]
   initMarker: ->
+    #console.log @props.children
     Marker = new PruneCluster.Marker(@props.position[0], @props.position[1])
+    console.log  @props.popUp
+    if @props.popUp
+      console.log "is popup?"
+      Marker.data.popup = @props.children
     @props.clusterContainer.RegisterMarker(Marker)
     return Marker
   componentWillMount: ->
@@ -23,10 +28,9 @@ PruneMarker = React.createClass
     @props.clusterContainer.RemoveMarkers @state.markerContainer
   componentWillUpdate: (nextProps, nextState) ->
     if nextProps.position != @props.position
-      @state.markerContainer.setLatLng nextProps.position
+      @state.markerContainer.Move nextProps.position
+      @props.clusterContainer.ProcessView()
   render: ->
-    @getChildrenWithProps
-      markerContainer: @state.markerContainer
-      mapContainer: @props.mapContainer
+    return null
 
 module.exports = PruneMarker

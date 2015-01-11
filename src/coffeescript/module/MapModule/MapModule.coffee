@@ -8,8 +8,12 @@ Test = require "./Mixins/Test.coffee"
 
 Map = React.createClass
   mixins: [Utils, Test]
+  getDefaultProps: ->
+    mapOptions:
+      minZoom: 1
+      maxZoom: 17
   initMap: ->
-    map = L.map(this.getDOMNode()).setView(@props.position, 5)
+    map = L.map(this.getDOMNode(), @props.mapOptions).setView(@props.position, 13)
     @setState
       mapContainer: map
   componentDidMount: ->
