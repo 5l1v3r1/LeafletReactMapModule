@@ -18,6 +18,7 @@ PruneMarker = React.createClass
     #console.log @props.children
     Marker = new PruneCluster.Marker(@props.position[0], @props.position[1])
     #console.log  @props.popUp
+    window.marker = Marker
     if @props.popUp? && @props.popUp = true
       Marker.data.popup = @props.children
     @props.clusterContainer.RegisterMarker(Marker)

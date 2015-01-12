@@ -64,29 +64,29 @@ PruneClusterLayer = React.createClass
     #@state.clusterContainer.RegisterMarker(test)
     #@state.clusterContainer.ProcessView()
 
-    #testMap = L.layerJSON({
-    #  url: 'http://overpass-api.de/api/interpreter?data=[out:json];node({lat1},{lon1},{lat2},{lon2})[amenity=bar];out;',
-    #  propertyItems: 'elements',
-    #  propertyTitle: 'tags.name',
-    #  propertyLoc: ['lat','lon'],
-    #  #layerTarget: @state.clusterContainer,
-    #  dataToMarker: (latlng, data) =>
-    #    console.log latlng.lat, latlng.lon
-    #    marker = new PruneCluster.Marker(latlng.lat, latlng.lon)
-    #    @state.clusterContainer.RegisterMarker(marker)
-    #    return {
-    #      marker: marker
-    #      onAdd: ->
-    #        console.log "strangeee!"
-    #      off: ->
-    #        console.log "strangeee!"     
-    #      getLatLng: ->
-    #        return L.latLng(latlng.lat, latlng.lon)
-    #    }
+    testMap = L.layerJSON({
+      url: 'http://overpass-api.de/api/interpreter?data=[out:json];node({lat1},{lon1},{lat2},{lon2})[amenity=bar];out;',
+      propertyItems: 'elements',
+      propertyTitle: 'tags.name',
+      propertyLoc: ['lat','lon'],
+      #layerTarget: @state.clusterContainer,
+      dataToMarker: (latlng, data) =>
+        console.log latlng.lat, latlng.lon
+        marker = new PruneCluster.Marker(latlng.lat, latlng.lon)
+        @state.clusterContainer.RegisterMarker(marker)
+        return {
+          marker: marker
+          onAdd: ->
+            console.log "strangeee!"
+          off: ->
+            console.log "strangeee!"     
+          getLatLng: ->
+            return L.latLng(latlng.lat, latlng.lon)
+        }
 #
-    #  buildPopup: (data, marker) ->
-    #    return data.tags.name || null
-    #}).addTo(@props.mapContainer)
+      buildPopup: (data, marker) ->
+        return data.tags.name || null
+    }).addTo(@props.mapContainer)
     #
     #testMap.on "layerremove", ->
     #  console.log "wew"
