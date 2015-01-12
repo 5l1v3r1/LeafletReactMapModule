@@ -2,7 +2,8 @@
 Fast and Scalable Mapping with Leaflet, PruneCluster and ReactJS
 
 ## Todo
-* Lazy load marker from Web API [inprogress]
+* Refactoring [inprogress]
+* Lazy load marker from Web API [done]
 * Integrate with PruneCluster [done]
 * Marker Popup [done]
 * Leaflet Marker [done]
