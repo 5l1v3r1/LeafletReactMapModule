@@ -1,17 +1,17 @@
-Map = require "./MapModule/MapModule.coffee"
-Marker = require "./MapModule/ElementModule/MarkerModule.coffee"
-PruneMarker = require "./MapModule/ElementModule/PruneMarkerModule.coffee"
-Popup = require "./MapModule/ElementModule/PopupModule.coffee"
-Layer = require "./MapModule/ElementModule/LayerModule.coffee"
-PruneCluster = require "./MapModule/ElementModule/ClusterModule.coffee"
-PrunePopup = require "./MapModule/ElementModule/PrunePopupModule.coffee"
-PruneLayerJSON = require "./MapModule/ElementModule/PruneLayerJsonModule.coffee"
+Map = require "../module/MapModule/MapModule.coffee"
+Marker = require "../module/MapModule/MarkerModule.coffee"
+PruneMarker = require "../module/MapModule/PruneMarkerModule.coffee"
+Popup = require "../module/MapModule/PopupModule.coffee"
+Layer = require "../module/MapModule/LayerModule.coffee"
+PruneCluster = require "../module/MapModule/ClusterModule.coffee"
+PrunePopup = require "../module/MapModule/PrunePopupModule.coffee"
+PruneLayerJSON = require "../module/MapModule/PruneLayerJsonModule.coffee"
 
 MapController = React.createClass
   getInitialState: ->
     window.mapcon = @
     {
-      positions:  require "./JRPdata.coffee"
+      positions:  require "../store/JRPdata.coffee"
       position: [-7.803252078318418, 110.37484495000001]
     }
   _onMove: ->
@@ -30,7 +30,7 @@ MapController = React.createClass
       <PrunePopup key={index}>
         <PruneMarker position={val}>
             <div>
-              <iframe title="pannellum panorama viewer" style={iframestyle} allowfullscreen=""  src="http://127.0.0.1:8000/src/pannellum.htm?config=../examples/config.json"></iframe>
+              <iframe title="pannellum panorama viewer" style={iframestyle} allowFullScreen="true"  src="http://127.0.0.1:8000/src/pannellum.htm?config=../examples/config.json"></iframe>
             </div>
         </PruneMarker>
       </PrunePopup>
@@ -39,7 +39,7 @@ MapController = React.createClass
     <Map className="custom-popup" position={@state.position} id="map">
       <Layer/>
       <PruneCluster>
-      <PruneLayerJSON/>
+      <PruneLayerJSON selected="id" />
         {children}
       </PruneCluster>
     </Map>

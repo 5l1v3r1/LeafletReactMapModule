@@ -4,7 +4,7 @@
  * parent: @props.markerContainer
 ###
 
-Utils = require "../Mixins/Utils.coffee"
+Utils = require "./Mixins/Utils.coffee"
 
 
 PrunePopup = React.createClass

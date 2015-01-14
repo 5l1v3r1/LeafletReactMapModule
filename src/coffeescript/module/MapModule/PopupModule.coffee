@@ -2,7 +2,7 @@
  * Popup Module for Leaflet
  * parent: @props.markerContainer
 ###
-Map = require "../MapModule.coffee"
+Map = require "./MapModule.coffee"
 Layer = require "./LayerModule.coffee"
 Marker = require "./MarkerModule.coffee"
 

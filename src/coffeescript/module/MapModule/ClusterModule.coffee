@@ -11,7 +11,7 @@
 ###
 
 
-Utils = require "../Mixins/Utils.coffee"
+Utils = require "./Mixins/Utils.coffee"
 
 PruneClusterLayer = React.createClass
   mixins : [Utils]

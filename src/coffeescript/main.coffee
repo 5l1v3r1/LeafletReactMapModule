@@ -2,7 +2,11 @@
  * MAP Controller
 ###
 
-MapJsonController = require "./module/MapJsonController.coffee"
+Reflux = require 'reflux'
+
+console.log "okess"
+
+MapJsonController = require "./component/MapJsonController.coffee"
 
 React.render(
   <MapJsonController/>

@@ -16,7 +16,7 @@
  *   @state.markerContainer = leaflet marker instance
 ###
 
-Utils = require "../Mixins/Utils.coffee"
+Utils = require "./Mixins/Utils.coffee"
 
 Layer = React.createClass
   _createLayer: ->

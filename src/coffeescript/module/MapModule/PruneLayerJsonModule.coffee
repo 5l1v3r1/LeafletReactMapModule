@@ -12,7 +12,7 @@
  *   @state.markerContainer = leaflet marker instance
 ###
 
-Utils = require "../Mixins/Utils.coffee"
+Utils = require "./Mixins/Utils.coffee"
 
 PruneLayerJSON = React.createClass
   

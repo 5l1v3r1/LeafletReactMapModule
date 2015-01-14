@@ -8,7 +8,7 @@
 ###
 
 
-Utils = require "../Mixins/Utils.coffee"
+Utils = require "./Mixins/Utils.coffee"
 
 Marker = React.createClass
   mixins : [Utils]

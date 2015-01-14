@@ -41,9 +41,9 @@ var vendors =
  //   backbone_babysitter:            "./bower_components/backbone.babysitter/lib/backbone.babysitter.js",
  //   backbone_wreqr:                 "./bower_components/backbone.wreqr/lib/backbone.wreqr.js",    
  //   marionette:                     "./bower_components/marionette/lib/backbone.marionette.min.js",
-    marionette:                     "./bower_components/underscore/underscore.js",
+    underscore:                     "./bower_components/underscore/underscore.js",
     reactjs:                        "./bower_components/react/react-with-addons.js",
-    reflux:                         "./bower_components/reflux/dist/reflux.js"
+ //   reflux:                         "./bower_components/reflux/dist/reflux.js"
 };
 
 var vendor_files = [];
@@ -140,6 +140,7 @@ gulp.task('vendor-jsonlayer', function(){
 gulp.task('app', function() {
     return browserify(path.coffeescript.src + '/main.coffee')
         .transform("coffee-reactify")
+        .require("./bower_components/reflux/dist/reflux.js", { expose: 'reflux'})
         //.transform("debowerify")
         //.transform("hbsfy")
         .bundle()
