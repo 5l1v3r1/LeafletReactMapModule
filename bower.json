@@ -20,6 +20,7 @@
     "react": "0.12.2",
     "reflux": "0.2.3",
     "underscore": "~1.7.0",
-    "PruneCluster": "~1.0.0"
+    "PruneCluster": "~1.0.0",
+    "leaflet-minimap": "~1.1.0"
   }
 }
