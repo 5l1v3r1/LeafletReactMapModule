@@ -13,7 +13,33 @@ html
         width:100%;
         padding:0px;
         margin:0px;
-      } 
+      }
+
+      .custom-popup .leaflet-popup-content-wrapper {
+      padding: 1px;
+      text-align: left;
+      border-radius: 0px;
+      }
+
+      .custom-popup .leaflet-popup-content-wrapper {
+      background:#000000;
+      color:#fff;
+      font-size:16px;
+      line-height:24px;
+      }
+      .custom-popup .leaflet-popup-content-wrapper a {
+      color:rgba(255,255,255,0.5);
+      }
+      .custom-popup .leaflet-popup-tip-container {
+      width:30px;
+      height:15px;
+      }
+      .custom-popup .leaflet-popup-tip {
+      background:#000000;
+
+      }
+
+
   body
     div#content
     include vendor.jade
