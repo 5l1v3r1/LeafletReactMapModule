@@ -29,12 +29,13 @@ PruneClusterLayer = React.createClass
         popContainer = '<div id="popc"></div>'
 
         if marker.getPopup()
-          marker.setPopupContent(popContainer)
+          #console.log "set content"
+          #marker.setPopupContent(popContainer)
         else
           marker.bindPopup popContainer,
-            maxWidth: 300
-            minWidth: 300
-            maxHeight: null
+            maxWidth: 400
+            minWidth: 400
+            maxHeight: 100
             zoomAnimation: false
 
         marker.on "popupopen", =>
