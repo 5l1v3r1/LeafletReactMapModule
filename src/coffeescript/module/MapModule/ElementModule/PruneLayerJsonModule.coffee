@@ -16,15 +16,16 @@ Utils = require "../Mixins/Utils.coffee"
 
 PruneLayerJSON = React.createClass
   
+  #contain cached marker
   _markersCache: {}
 
-  ###*
-   * [_createLayer description]
-   * @return {[type]} [description]
-  ###
-  _createLayer: ->
-    layer.addTo @props.mapContainer
-    return layer
+  ####*
+  # * [_createLayer description]
+  # * @return {[type]} [description]
+  ####
+  #_createLayer: ->
+  #  layer.addTo @props.mapContainer
+  #  return layer
 
   ###*
    * Make Ajax Call
@@ -98,34 +99,32 @@ PruneLayerJSON = React.createClass
         marker_pos =  L.latLng(cachedmarker.marker.position.lat, cachedmarker.marker.position.lng)
         if bounds.contains marker_pos
           if cachedmarker.loaded == false
-            console.log "-------- loaded layer from cache --------"
-            console.log cachedmarker.marker.data.name            
+            #console.log "-------- loaded layer from cache --------"
+            #console.log cachedmarker.marker.data.name
             @props.clusterContainer.RegisterMarker(cachedmarker.marker)
-            cachedmarker.loaded = true            
+            cachedmarker.loaded = true
         else
           if cachedmarker.loaded == true
-            console.log "-------- removed hidden marker --------"
-            console.log cachedmarker.marker.data.name
+            #console.log "-------- removed hidden marker --------"
+            #console.log cachedmarker.marker.data.name
             @props.clusterContainer.RemoveMarkers([cachedmarker.marker])
             cachedmarker.loaded = false
-            #console.log  cachedmarker.marker
-            #@props.clusterContainer.ProcessView();          
-    @props.clusterContainer.ProcessView();
+            ##console.log  cachedmarker.marker
+            #@props.clusterContainer.ProcessView();
+    @props.clusterContainer.ProcessView()
     
 
   ###*
-  *
-  *  for(var k in json)
-  *    that.addMarker.call(that, json[k]);
-  *
+   * [_updateMarkerFromBounds description]
+   * @return {[type]} [description]
   ###
-  _update: ->
-    console.log "update called"
+  _updateMarkerFromBounds: (bounds) ->
+    #console.log "update called"
     
-    # current map bound 
+    # current map bound
 
     prec = 6 #precision
-    bb = @props.mapContainer.getBounds()
+    bb = bounds
     sw = bb.getSouthWest()
     ne = bb.getNorthEast()
     
@@ -144,80 +143,75 @@ PruneLayerJSON = React.createClass
 
     #ajax request to hashed url
     #check whether data is cached, if not add the data to cache array
-    console.log "ajax, #{hashed_url}"
+    #console.log "ajax, #{hashed_url}"
     
-    @_getAjax hashed_url, (data) =>  
-      console.log "received: #{data.elements.length}"
+    console.log bbox
+    @_getAjax hashed_url, (data) =>
+      #console.log "received: #{data.elements.length}"
+      
+      #define rectangle geographical bounds
+      #bounds = [[54.559322, -5.767822], [56.1210604, -3.021240]];
+
+      #create an orange rectangle
+      #if window.debug? && window.debug == true
+      #  bb = @props.mapContainer.getBounds()
+
+      #  sw = bb.getSouthWest()
+      #  ne = bb.getNorthEast()
+      # 
+      #  half_lat = (sw.lat.toFixed(prec) - ne.lat.toFixed(prec)) / 2
+      #  half_lon = (sw.lng.toFixed(prec) - ne.lng.toFixed(prec)) /2
+
+      #  sw2 = L.latLng(parseFloat(sw.lat.toFixed(prec)), parseFloat(sw.lng.toFixed(prec)))
+      #  ne2 = L.latLng(parseFloat(ne.lat.toFixed(prec)), parseFloat(sw.lng.toFixed(prec))+half_lon)
+      #  
+      #  bounds = L.latLngBounds(sw, ne2)
+      #  L.rectangle(bounds, {color: "#ff7800", weight: 1}).addTo(@props.mapContainer);
+
+      # iterate new data returned from server
+      # and check if they already loaded to cache
+      # then register new marker to Prunecluster
       for element in data.elements
         hash = @_getPath(element, "id")
         if typeof @_markersCache[hash] == 'undefined'
-          console.log "save to cache: #{element.lat} #{element.lon} #{element.tags.name}"
+          #console.log "save to cache: #{element.lat} #{element.lon} #{element.tags.name}"
           marker = new PruneCluster.Marker(element.lat, element.lon)
           marker.data.name = element.tags.name
           @props.clusterContainer.RegisterMarker marker
 
-          @_markersCache[hash] = 
-            marker: marker 
+          @_markersCache[hash] =
+            marker: marker
             loaded: true
-        @props.clusterContainer.ProcessView()
+      
+      @props.clusterContainer.ProcessView()
           
-
-
-  _defaultDataToMarker: (lat, lng)->
-    marker = new PruneCluster.Marker(lat, lng)
-    @props.clusterContainer.RegisterMarker(marker)
-    @props.clusterContainer.ProcessView()
-    return marker
-
-  ###*
-   *  todo : hash
-   *  check hash has content
-   *   if not create marker and set hash to marker instance
-   *
-  ###
-  _addMarker: (data) ->
-    hash = "bogus"
-    console.log "add marker"
-
-    if @_markersCache[hash]?
-      console.log "save cache"
-      @_markersCache[hash] = @_dataToMarker(data, latlng)
-
-    if @_markersCache[hash]?
-      @props.clusterContainer.RegisterMarker @_markersCache[hash]
 
   ###*
    * On Map moved check for bound coverage
    * if out of coverage get data
   ###
   _onMove: ->
-    #newZoom = @props.mapContainer.getZoom()
-    #newCenter = @props.mapContainer.getCenter()  
-    newBounds = @props.mapContainer.getBounds()
-  
+    newBounds = @props.mapContainer.getBounds() 
+    #if bound already cached lets load marker from cache
     if @_maxBounds.contains(newBounds) == true
-      console.log "_markersCacheToLayer()"      
+      console.log "cached.."
       @_markersCacheToLayer()
       return false
     else
-      console.log "get update cache"
-      @_update()
+      console.log "update.."
+      @_updateMarkerFromBounds(newBounds)
       @_maxBounds.extend(newBounds)
 
-  #getInitialState: ->
-  #  layerContainer: @_createLayer()
   componentWillMount: ->
   componentDidMount: ->
+    #console.log "did mount"
     @props.mapContainer.on "moveend", @_onMove
+    @_maxBounds = @props.mapContainer.getBounds() #set initial map bounds
+    @_updateMarkerFromBounds(@_maxBounds) #get marker from current bounds
 
-    @_center = @props.mapContainer.getCenter()
-    @_maxBounds = @props.mapContainer.getBounds()
-
-    @_update()
-    #console.log @_center
     window.prunetest = @
   componentWillUnmount: ->
-    console.log "destroy layer"
+    #console.log "destroy layer"
     @props.mapContainer.removeLayer @state.layerContainer
       
   render: ->
