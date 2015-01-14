@@ -27,6 +27,18 @@ Map = React.createClass
   initMap: ->
     map = L.map(this.getDOMNode(), @props.mapOptions).setView(@props.position, 13)
     @setState mapContainer: map
+  
+  shouldComponentUpdate: (nextProps, nextState) ->
+    shouldUpdate = true
+
+    if nextProps.position != @props.position 
+      @state.mapContainer.setView(nextProps.position)
+      shouldUpdate = false
+
+    return shouldUpdate
+
+  componentWillUpdate: (nextProps, nextState) ->
+    
   componentDidMount: ->
     console.log "from module componentDidMount"
     @initMap()
