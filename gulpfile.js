@@ -86,6 +86,7 @@ var path = {
 //fire up browsersync server
 gulp.task('browsersync',function(){
     browsersync({
+        open: false,
         server : {
             baseDir: base.dst
         }
