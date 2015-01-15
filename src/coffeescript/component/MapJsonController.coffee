@@ -1,3 +1,6 @@
+Reflux = require 'reflux'
+actions = require '../actions/actions.coffee'
+
 Map = require "../module/MapModule/MapModule.coffee"
 Marker = require "../module/MapModule/MarkerModule.coffee"
 PruneMarker = require "../module/MapModule/PruneMarkerModule.coffee"
@@ -5,7 +8,7 @@ Popup = require "../module/MapModule/PopupModule.coffee"
 Layer = require "../module/MapModule/LayerModule.coffee"
 PruneCluster = require "../module/MapModule/ClusterModule.coffee"
 PrunePopup = require "../module/MapModule/PrunePopupModule.coffee"
-PruneLayerJSON = require "../module/MapModule/PruneLayerJsonModule.coffee"
+PruneLayerJSON = require "./JsonLayerController.coffee"
 
 MapController = React.createClass
   getInitialState: ->
@@ -26,11 +29,13 @@ MapController = React.createClass
       "height": "300px"
 
     #render children
+    ##              <iframe title="pannellum panorama viewer" style={iframestyle} allowFullScreen="true"  src="http://127.0.0.1:8000/src/pannellum.htm?config=../examples/config.json"></iframe>
+
     children = @state.positions.map (val, index)->
       <PrunePopup key={index}>
         <PruneMarker position={val}>
             <div>
-              <iframe title="pannellum panorama viewer" style={iframestyle} allowFullScreen="true"  src="http://127.0.0.1:8000/src/pannellum.htm?config=../examples/config.json"></iframe>
+              <button onClick={ -> actions.login()} >test click me</button>
             </div>
         </PruneMarker>
       </PrunePopup>

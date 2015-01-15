@@ -3,8 +3,7 @@
 ###
 
 Reflux = require 'reflux'
-
-console.log "okess"
+MarkerStore = require './store/MarkerStore.coffee'
 
 MapJsonController = require "./component/MapJsonController.coffee"
 
