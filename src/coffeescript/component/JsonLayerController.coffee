@@ -21,23 +21,38 @@ PruneLayerJSON = React.createClass
   _markersCache: {}
 
   _receivedMarkerData: (data) ->
-    console.log data
-    for hash, marker of data
-      if marker.loaded
-        if not (@_markersCache[hash])
-          @_markersCache[hash] = new PruneCluster.Marker(marker.lat, marker.lon)
-          @props.clusterContainer.RegisterMarker @_markersCache[hash]
-      else
-        if (@_markersCache[hash])
-          @props.clusterContainer.RemoveMarkers([@_markersCache[hash]])
-          delete @_markersCache[hash]
+    #console.log data
+    for marker, idx in data
+      hash = marker.hash
+      if not (@_markersCache.hasOwnProperty(hash)) #if received marker is not in cache
+        @_markersCache[hash] = new PruneCluster.Marker(marker.lat, marker.lon)  #create and add marker to cache
+        @props.clusterContainer.RegisterMarker @_markersCache[hash]
+        redraw = true
+    if redraw?
+      @props.clusterContainer.ProcessView()
+      #console.log "redraw" 
 
-    @props.clusterContainer.ProcessView()
+  _isBoundsCached: (bounds) ->
+    if @_maxBounds? #if not an initial data
+      #if bound already cached lets load marker from cache
+      if @_maxBounds.contains(bounds) == true
+        return true
+      else
+        #@_maxBounds.extend(bounds)
+        console.log "extend"
+        return false
+    else
+      @_maxBounds = bounds
+      return false
 
   _getMarkerFromCurrentBounds: ->
-    Actions.getMarkerBound(@props.mapContainer.getBounds())
+    currentBounds = @props.mapContainer.getBounds()
+    cached = @_isBoundsCached(currentBounds)
+    console.log 'local cached', cached
+    if cached == false then Actions.getMarkerBound(currentBounds)
 
   componentDidMount: -> #set initial map bounds
+    window.cachedebug = @_markersCache
     @_getMarkerFromCurrentBounds()
     @props.mapContainer.on "moveend", @_getMarkerFromCurrentBounds
 

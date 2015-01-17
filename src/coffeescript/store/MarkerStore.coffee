@@ -76,8 +76,10 @@ MarkerStore = Reflux.createStore
    * @param  LeafletMapBounds bounds [new bound]
   ###
   _markersCacheToLayer: (bounds) ->
+    console.log "cache call"    
     #bounds = @props.mapContainer.getBounds()
     #console.log @_markersCache
+    test = []
     for idx, cachedmarker of @_markersCache
       if cachedmarker
         marker_pos =  L.latLng(cachedmarker.lat, cachedmarker.lon)
@@ -95,12 +97,14 @@ MarkerStore = Reflux.createStore
             cachedmarker.loaded = false
             ##console.log  cachedmarker.marker
             #@props.clusterContainer.ProcessView();
-    Actions.receivedMarkerData(@_markersCache)
+        test.push(cachedmarker)
+    Actions.receivedMarkerData(test)
   ###*
    * [_updateMarkerFromBounds description]
    * @return {[type]} [description]
   ###
   _updateMarkerFromBounds: (bounds) ->
+    console.log "ajax call"
     # current map bound
     prec = 6 #precision
     bb = bounds
@@ -119,12 +123,15 @@ MarkerStore = Reflux.createStore
     #check whether data is cached, if not add the data to cache array
     #console.log "ajax, #{hashed_url}"
     #console.log bbox
+    test = []
+
     @_getAjax hashed_url, (data) =>
       for element in data.elements
         hash = @_getPath(element, "id")
         if typeof @_markersCache[hash] == 'undefined'
           #console.log "save to cache: #{element.lat} #{element.lon} #{element.tags.name}"
           marker =
+            hash: hash
             lat: element.lat
             lon: element.lon
             loaded: true
@@ -135,8 +142,9 @@ MarkerStore = Reflux.createStore
           #marker.data.name = element.tags.name
           #@props.clusterContainer.RegisterMarker marker
           @_markersCache[hash] = marker
+          test.push marker
 
-      Actions.receivedMarkerData(@_markersCache)
+      Actions.receivedMarkerData(test)
       #@props.clusterContainer.ProcessView()
 
   ###*
@@ -146,7 +154,7 @@ MarkerStore = Reflux.createStore
   _getMarkerBounds: (bounds) ->
 
     if @_maxBounds? #if not an initial data
-      #console.log "not initial"
+      console.log "not initial"
       #if bound already cached lets load marker from cache
       if @_maxBounds.contains(bounds) == true
         #console.log "cached.."
@@ -157,7 +165,7 @@ MarkerStore = Reflux.createStore
         @_updateMarkerFromBounds(bounds)
         @_maxBounds.extend(bounds)
     else
-      #console.log "update initial data.."
+      console.log "update initial data.."
       @_updateMarkerFromBounds(bounds)
       @_maxBounds = bounds
 

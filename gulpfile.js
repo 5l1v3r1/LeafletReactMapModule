@@ -43,6 +43,7 @@ var vendors =
  //   marionette:                     "./bower_components/marionette/lib/backbone.marionette.min.js",
     underscore:                     "./bower_components/underscore/underscore.js",
     reactjs:                        "./bower_components/react/react-with-addons.js",
+    tabletop:                       "./bower_components/tabletop/src/tabletop.js"
  //   reflux:                         "./bower_components/reflux/dist/reflux.js"
 };
 

@@ -21,6 +21,8 @@
     "reflux": "0.2.3",
     "underscore": "~1.7.0",
     "PruneCluster": "~1.0.0",
-    "leaflet-minimap": "~1.1.0"
+    "leaflet-minimap": "~1.1.0",
+    "tabletop": "~1.4.0",
+    "boot": "3.3.1"
   }
 }

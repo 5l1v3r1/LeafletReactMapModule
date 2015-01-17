@@ -12,26 +12,28 @@ Map = React.createClass
     mapOptions:
       minZoom: 1
       maxZoom: 17
-  initEvents: ->
-    _mapcon = @state.mapContainer
+  initEvents: (mapInstance)->
+    _mapcon = mapInstance
     for event, action of @props
       if event[0..1] == "on"
         _action = action
-        @state.mapContainer.on event[2..].toLowerCase(), (e) -> _action(e,_mapcon)
-  cleanEvents: ->
-    _mapcon = @state.mapContainer
+        mapInstance.on event[2..].toLowerCase(), (e) -> _action(e,_mapcon)
+  cleanEvents: (mapInstance) ->
+    _mapcon = mapInstance
     for event, action of @props
       if event[0..1] == "on"
         _action = action
-        @state.mapContainer.on event[2..].toLowerCase(), (e) -> _action(e,_mapcon)
+       mapInstance.on event[2..].toLowerCase(), (e) -> _action(e,_mapcon)
   initMap: ->
-    map = L.map(this.getDOMNode(), @props.mapOptions).setView(@props.position, 13)
+    map = L.map(this.getDOMNode(), @props.mapOptions)
+    @initEvents(map)
+    map.setView(@props.position, 13)
     @setState mapContainer: map
-  
+
   shouldComponentUpdate: (nextProps, nextState) ->
     shouldUpdate = true
 
-    if nextProps.position != @props.position 
+    if nextProps.position != @props.position
       @state.mapContainer.setView(nextProps.position)
       shouldUpdate = false
 
@@ -42,7 +44,8 @@ Map = React.createClass
   componentDidMount: ->
     console.log "from module componentDidMount"
     @initMap()
-    @initEvents()
+    #@state.mapContainer.
+
   componentWillUnmount: ->
     console.log "map unmount"
     @cleanEvents()

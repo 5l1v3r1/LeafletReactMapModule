@@ -5,4 +5,7 @@ module.exports = Reflux.createActions [
   'getMarkerBound'
   'selectMarker'
   'receivedMarkerData'
+  'receivedAPIData'
+  'processClusterView'
+  'mapBoundsChanged'
   ]

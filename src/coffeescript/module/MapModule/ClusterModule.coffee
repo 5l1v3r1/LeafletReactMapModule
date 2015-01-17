@@ -10,11 +10,17 @@
  *   clusterContainer
 ###
 
+Reflux = require 'reflux'
+Actions = require '../../actions/actions.coffee'
+
 
 Utils = require "./Mixins/Utils.coffee"
 
 PruneClusterLayer = React.createClass
-  mixins : [Utils]
+  mixins: [Utils,Reflux.listenTo(Actions.processClusterView, "_processClusterView")]
+  _processClusterView: ->
+    console.log "proc"
+    @state.clusterContainer.ProcessView()
   initCluster: ->
 
     clusterContainer = new PruneClusterForLeaflet()
@@ -93,6 +99,11 @@ PruneClusterLayer = React.createClass
     #  console.log "wew"
 
     window.wew = @state.clusterContainer
+  componentWillUpdate: (nextProps, nextState) ->
+    console.log "Wedew"
+    window.cc = @state.clusterContainer
+  componentDidUpdate: (prevProps, prevState) ->
+    @state.clusterContainer.ProcessView()
 
   componentWillUnmount: ->
     delete @state.clusterContainer
