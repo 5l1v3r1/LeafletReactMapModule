@@ -23,6 +23,8 @@
     "PruneCluster": "~1.0.0",
     "leaflet-minimap": "~1.1.0",
     "tabletop": "~1.4.0",
-    "boot": "3.3.1"
+    "boot": "3.3.1",
+    "bootstrap-sass-official": "~3.3.1",
+    "fontawesome": "~4.2.0"
   }
 }
