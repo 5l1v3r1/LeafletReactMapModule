@@ -1,6 +1,8 @@
 # LeafletReactMapModule
 Fast and Scalable Mapping with Leaflet, PruneCluster and ReactJS
 
+https://biodesign.cc/
+
 # Demo
 
 
@@ -20,3 +22,7 @@ LeafletReactMapModule + 360 photo + E.coli contamination (Jogja river project + 
 * Integrate with PruneCluster [done]
 * Marker Popup [done]
 * Leaflet Marker [done]
+
+## Author
+
+Budi Prakosa aka @Badgeek
