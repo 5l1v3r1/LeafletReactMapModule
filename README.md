@@ -3,7 +3,7 @@ Fast and Scalable Mapping with Leaflet, PruneCluster and ReactJS
 
 # Demo
 
-http://maps.lifepatch.org/v2/
+LeafletReactMapModule + 360 photo + eColi contamination (Jogja river project + biodesign) - http://maps.lifepatch.org/v2/
 
 ## Todo
 * Refactoring [inprogress]
