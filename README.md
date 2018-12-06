@@ -7,7 +7,7 @@ Fast and Scalable Mapping with Leaflet, PruneCluster and ReactJS
 
 ![LeafletReactMapModule Logo](http://imgs.fyi/img/6ts8.png)
 
-LeafletReactMapModule + 360 photo + eColi contamination (Jogja river project + biodesign) - http://maps.lifepatch.org/v2/
+LeafletReactMapModule + 360 photo + E.coli contamination (Jogja river project + biodesign) - http://maps.lifepatch.org/v2/
 
 
 
